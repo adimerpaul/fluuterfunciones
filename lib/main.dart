@@ -12,6 +12,10 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  void saludar() {
+    print('Hola Mundo');
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,9 +27,11 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Flutter Demo'),
         ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
+        body: Center(
+            child: ElevatedButton(
+          onPressed: saludar,
+          child: const Text('Saludar'),
+        )),
       ),
     );
   }
