@@ -15,16 +15,40 @@ class _MyAppState extends State<MyApp> {
   TextEditingController _controller = TextEditingController();
 
   void saludar() {
-    var edad = int.tryParse(_controller.text);
-    if (edad != null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Hola, tengo $edad años'),
-        ),
-      );
-    } else {
-      print('Edad no válida');
-    }
+    // var edad = int.tryParse(_controller.text);
+    // print(edad);
+    // if (edad != null) {
+    //   if (edad >= 18) {
+    //     print('Hola, eres mayor de edad');
+    //   } else {
+    //     print('Hola, eres menor de edad');
+    //   }
+    // } else {
+    //   print('Edad no válida');
+    // }
+
+    // for (var i = 0; i < 5; i++) {
+    //   print('Iteración $i');
+    // }
+
+    // var edad = 0;
+
+    // while (edad < 18) {
+    //   print('Eres menor de edad');
+    //   edad++;
+    // }
+
+    // var numeros = [1, 2, 3, 4];
+
+    // numeros.add(10);
+
+    // print(numeros); // [1, 2, 3, 4, 5]
+
+    var usuario = {
+      'nombre': 'Adimer',
+      'edad': 30,
+    };
+    print(usuario['nombre']); // Adimer
   }
 
   @override
